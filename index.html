@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nanofert | Nutrición inteligente para el campo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#fbf9f4",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#5c4035",
+                    "tertiary-fixed-dim": "#ffba27",
+                    "secondary-container": "#fdd4c5",
+                    "secondary-fixed": "#ffdbce",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-primary": "#ffffff",
+                    "outline": "#717973",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#271900",
+                    "surface-variant": "#e4e2dd",
+                    "on-primary-container": "#86af99",
+                    "surface-bright": "#fbf9f4",
+                    "on-surface": "#1b1c19",
+                    "on-primary-fixed-variant": "#274e3d",
+                    "primary-container": "#1b4332",
+                    "on-primary-fixed": "#002114",
+                    "tertiary": "#342300",
+                    "primary": "#012d1d",
+                    "error-container": "#ffdad6",
+                    "surface": "#fbf9f4",
+                    "surface-tint": "#3f6653",
+                    "surface-dim": "#dbdad5",
+                    "inverse-on-surface": "#f2f1ec",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#a5d0b9",
+                    "surface-container-high": "#eae8e3",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1b1c19",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#2b160d",
+                    "inverse-surface": "#30312e",
+                    "on-tertiary-fixed-variant": "#5e4100",
+                    "surface-container-low": "#f5f3ee",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#785a4e",
+                    "surface-container": "#f0eee9",
+                    "on-surface-variant": "#414844",
+                    "inverse-primary": "#a5d0b9",
+                    "tertiary-fixed": "#ffdea9",
+                    "on-tertiary-container": "#d89b00",
+                    "secondary-fixed-dim": "#e5beaf",
+                    "primary-fixed": "#c1ecd4",
+                    "secondary": "#76584c",
+                    "outline-variant": "#c1c8c2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-lg": "48px",
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "margin-desktop": "40px",
+                    "stack-md": "24px",
+                    "gutter": "24px",
+                    "stack-xs": "4px",
+                    "stack-sm": "12px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display-xl": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["13px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soil-texture {
+            background-image: radial-gradient(rgba(96, 68, 57, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed-dim selection:text-primary">
+<!-- Header / TopNavBar -->
+<header class="fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm bg-white">
+<nav class="flex justify-between items-center px-margin-desktop py-2 max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<img alt="Nanofert Logo" class="h-16 md:h-20 w-auto object-contain" src="images/nanofert.png"/>
+</div>
+<div class="hidden md:flex items-center gap-8 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 active:scale-95" href="#products">Productos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 active:scale-95" href="#about">Nuestra Historia</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 active:scale-95" href="#plant">Planta Industrial</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 active:scale-95" href="#contact">Contacto</a>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[90vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Panorama agrícola Nanofert" class="w-full h-full object-cover" src="images/campo.png"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full text-white">
+<div class="max-w-2xl">
+<h1 class="font-display-xl text-display-xl lg:text-7xl mb-stack-md leading-tight">Nutrición inteligente para el campo</h1>
+<p class="font-body-lg text-body-lg mb-stack-lg opacity-90">Fertilizantes de alta eficiencia para maximizar el rendimiento de sus cultivos con tecnología de precisión y respeto ambiental.</p>
+</div>
+</div>
+</section>
+<!-- About Us Section (Nuestra Historia) -->
+<section class="py-stack-lg px-margin-desktop overflow-hidden" id="about">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="flex-1">
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase mb-4 block">Sobre Nosotros</span>
+<h2 class="font-display-xl text-display-xl text-primary mb-6">Nuestra Historia</h2>
+<p class="text-body-lg text-on-surface-variant mb-10">En Nanofert S.A., combinamos la ciencia avanzada con la pasión por la tierra paraguaya. Nuestra trayectoria se define por el compromiso constante con la innovación agrícola y el desarrollo sostenible del campo paraguayo.</p>
+<div class="space-y-8">
+<div class="bg-white p-6 rounded-xl border-l-4 border-primary shadow-sm">
+<h4 class="font-bold text-primary flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-xl">rocket_launch</span> Misión
+                            </h4>
+<p class="text-on-surface-variant">Brindar soluciones nutricionales de vanguardia que potencien la productividad agrícola, optimizando recursos y respetando el equilibrio ambiental.</p>
+</div>
+<div class="bg-white p-6 rounded-xl border-l-4 border-tertiary-fixed-dim shadow-sm">
+<h4 class="font-bold text-primary flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-xl">visibility</span> Visión
+                            </h4>
+<p class="text-on-surface-variant">Ser el referente líder en nutrición vegetal en la región, reconocidos por nuestra tecnología, calidad certificada y el éxito de nuestros productores.</p>
+</div>
+<div class="bg-white p-6 rounded-xl border-l-4 border-secondary shadow-sm">
+<h4 class="font-bold text-primary flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-xl">verified</span> Valores
+                            </h4>
+<ul class="grid grid-cols-2 gap-2 text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span> Innovación</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span> Integridad</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span> Compromiso</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-secondary rounded-full"></span> Sustentabilidad</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="absolute -inset-4 border border-outline-variant/30 rounded-2xl rotate-3"></div>
+<img alt="Brote verde Nanofert" class="rounded-2xl shadow-xl relative z-10 w-full object-cover aspect-square" src="images/brote.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Industrial Plant Section -->
+<section class="py-stack-lg bg-primary-container text-white px-margin-desktop" id="plant">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="font-display-xl text-display-xl mb-4">Nuestra Planta Industrial</h2>
+<p class="text-body-lg opacity-80 max-w-xl">Tecnología de punta y procesos automatizados para garantizar la pureza y eficacia de cada lote de fertilizante.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-6 rounded-xl flex items-center gap-4 border border-white/20">
+<span class="material-symbols-outlined text-5xl text-tertiary-fixed-dim" style='font-variation-settings: "FILL" 1;'>verified</span>
+<div>
+<div class="font-bold text-xl uppercase tracking-wider">Calidad Certificada</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6 w-full">
+<div class="w-full overflow-hidden rounded-xl border border-white/10 shadow-2xl">
+<img alt="Vista aérea de la planta industrial Nanofert" class="w-full h-auto max-h-[600px] object-cover hover:scale-[1.01] transition-transform duration-700" src="images/plantaindustrial.jpeg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-stack-lg px-margin-desktop bg-white" id="partners">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-display-xl text-display-xl text-primary mb-12">Aliados estratégicos</h2>
+<div class="flex flex-wrap justify-center items-center gap-16 md:gap-24">
+<div class="flex items-center justify-center">
+<img alt="Arla32 Logo" class="h-20 md:h-24 w-auto object-contain" src="images/arla32.png"/>
+</div>
+<div class="flex items-center justify-center">
+<a class="transition-transform hover:scale-105" href="https://agroprime.com.py/" target="_blank">
+<img alt="Agroprime Logo" class="h-20 md:h-24 w-auto object-contain" src="images/agroprime.png"/>
+</a>
+</div>
+</div>
+</div>
+</section><section class="py-stack-lg px-margin-desktop bg-surface-container-low soil-texture" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="max-w-3xl mx-auto text-center lg:text-left lg:grid lg:grid-cols-2 lg:gap-20 items-center">
+<div>
+<h2 class="font-display-xl text-display-xl text-primary mb-8">Contáctenos</h2>
+<p class="text-body-lg text-on-surface-variant mb-12">Estamos aquí para asesorarle en la mejor solución para sus cultivos. Nuestro equipo de ingenieros agrónomos le brindará el soporte necesario.</p>
+</div>
+<div class="space-y-8 text-left">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary p-3 bg-primary/5 rounded-full">business</span>
+<div>
+<h4 class="font-bold text-primary">Razón Social</h4>
+<p class="text-on-surface-variant">NANOFERT S.A.</p>
+<p class="text-sm font-semibold opacity-70">RUC: 80087068-9</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary p-3 bg-primary/5 rounded-full">location_on</span>
+<div>
+<h4 class="font-bold text-primary">Dirección</h4>
+<p class="text-on-surface-variant">Calle KM 9 1/2 A 3 KM DEL CONTROL LEGUI-CUE, Hernandarias, Paraguay.</p>
+<a class="text-primary font-bold text-sm underline mt-2 inline-block hover:text-secondary" href="https://www.google.com/maps?q=-25.3103229,-54.7097548" target="_blank">Ver en Google Maps</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary p-3 bg-primary/5 rounded-full">call</span>
+<div>
+<h4 class="font-bold text-primary">Teléfonos</h4>
+<p class="text-on-surface-variant">061-580-189</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary p-3 bg-primary/5 rounded-full">mail</span>
+<div>
+<h4 class="font-bold text-primary">Email</h4>
+<p class="text-on-surface-variant">contacto@nanofert.com.py</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container w-full rounded-t-xl border-t border-secondary/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-stack-md max-w-container-max mx-auto gap-8">
+<div class="flex items-center gap-2">
+<img alt="Nanofert Logo" class="h-20 md:h-24 w-auto object-contain" src="images/nanofert.png"/>
+</div>
+</div>
+<div class="text-center pb-8 opacity-60 text-sm">© 2026 Nanofert S.A. Nutrición avanzada para un crecimiento sostenible. RUC: 80087068-9.</div>
+</footer>
+</body></html>
